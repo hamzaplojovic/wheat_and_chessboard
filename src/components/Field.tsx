@@ -18,7 +18,7 @@ export const Field = (props:{rowNumber:number}) => {
         event.currentTarget.style.backgroundColor = "yellow";
         event.currentTarget.style.color = "black";
         event.currentTarget.innerHTML = String(2**(Number(event.currentTarget.id)-1));
-        document.querySelector("#display")!.innerHTML = String(result)
+        document.querySelector("#display")!.innerHTML = "Result: "+`<span class="result">${String(result)}</span>`
         
     };
     let numbers = Array.from({length: 8}, (_, k) => k + 1 + 8 * (props.rowNumber - 1))

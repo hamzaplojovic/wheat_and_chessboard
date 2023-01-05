@@ -13,7 +13,7 @@ export const App = ( ) => {
         </>
         </div>
         <div className="display">
-            <h5 id="display">0</h5>
+            <h5 id="display">Result: <span className="result">0</span></h5>
         </div>
         </div>
     );
